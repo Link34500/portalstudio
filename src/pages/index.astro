@@ -1,15 +1,14 @@
 ---
-import { Image } from "astro:assets";
-import Layout from "../layouts/Layout.astro";
-import logo from "@/assets/logo.svg";
+import ServicesSection from '@/components/features/home/services-section.astro';
+import Layout from '../layouts/layout.astro';
+import Hero from '@/components/features/home/hero-section.astro';
+import Realisations from '@/components/features/home/realisations.astro';
+import Devis from '@/components/features/home/devis.astro';
 ---
 
 <Layout>
-  <div class="flex flex-col items-center justify-center">
-    <Image src={logo} alt="Logo de Portal Studio" width={128} height={128} />
-    <p class="text-4xl font-semibold text-center">
-      Site en cours de construction
-    </p>
-    <p>Nous arrivons très bientôt</p>
-  </div>
+  <Hero/>
+  <ServicesSection/>
+  <Realisations/>
+  <Devis/>
 </Layout>
